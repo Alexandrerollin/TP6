@@ -39,9 +39,8 @@
  }
 
  .img {
-    display: grid;
      grid-column: 1 /span 5;
-     justify-items: center;
+     justify-self: center;
  }
 
 }
