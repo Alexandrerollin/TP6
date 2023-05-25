@@ -24,6 +24,7 @@
     aside {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
     }
 
     h1 {
@@ -37,11 +38,18 @@
 
  p {
      grid-column: 1 /span 4;
+     grid-row: 2;
+ }
+
+ .p2 {
+     grid-column: 1 /span 4;
+     grid-row: 3;
  }
 
  .img {
      grid-column: 1 /span 5;
      justify-self: center;
+     grid-row: 4;
  }
 
 }
