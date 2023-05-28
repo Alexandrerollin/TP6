@@ -24,7 +24,7 @@
     aside {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 100px 100px 100px 100px;
     }
 
     h1 {
@@ -37,20 +37,40 @@
         grid-row: 2;
     }
 
- p {
+ aside p {
      grid-column: 1 /span 4;
      grid-row: 2;
  }
 
- .p2 {
+ aside p:nth-child(3) {
      grid-column: 1 /span 4;
      grid-row: 3;
  }
+
+ /* aside p:last-child {
+    grid-column: 2 /span 3;
+    grid-row: 4;
+    justify-self: center;
+ } */
 
  .img {
      grid-column: 1 /span 5;
      justify-self: center;
      grid-row: 4;
+ }
+
+ #mes_photos h1 {
+    text-align: center;
+ }
+
+ #mes_photos p {
+    display: grid;
+    grid-template-columns: 100px 100px;
+    justify-content: center;
+ }
+
+ #mes_photos p img {
+    width: 100%;
  }
 
 }
