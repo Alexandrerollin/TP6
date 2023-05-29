@@ -47,12 +47,6 @@
      grid-row: 3;
  }
 
- /* aside p:last-child {
-    grid-column: 2 /span 3;
-    grid-row: 4;
-    justify-self: center;
- } */
-
  .img {
      grid-column: 1 /span 5;
      justify-self: center;
