@@ -42,7 +42,7 @@
      grid-row: 2;
  }
 
- aside p:nth-child(3) {
+ aside p:nth-last-child(2) {
      grid-column: 1 /span 4;
      grid-row: 3;
  }
@@ -71,6 +71,23 @@
 
  #mes_photos p img {
     width: 100%;
+ }
+
+ #tweet {
+    display: grid;
+    grid-template-columns: 150px 50px;
+    justify-content: end;
+    grid-template-rows: 70px 30px 30px;
+ }
+
+ #tweet p {
+    grid-column: 1;
+    grid-row: 2;
+ }
+
+ #tweet p:nth-last-child(1) {
+    grid-column: 1;
+    grid-row: 3;
  }
 
 }
